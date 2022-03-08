@@ -1,0 +1,8 @@
+sudo: required
+language: generic
+services:
+  - docker
+before_install:
+  - docker build -t docker-app -f Dockerfile-test .
+script:
+  - docker run -e CI=true docker-app npm run test
