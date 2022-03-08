@@ -11,7 +11,7 @@ deploy:
   access_key_id:
     secure: $user
   secret_access_key:
-    secure: $pwd
+    secure: $psw
   region: "ap-southeast-2"
   app: 'docker'
   env: 'docker-env'
